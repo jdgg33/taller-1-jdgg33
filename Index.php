@@ -29,7 +29,14 @@ $division=$n1/$n2;
 echo("la division de los numeros n1 y n2 es : ".$division."<br><br>");
 
 //Ejercicio 2
-
+/*La clasificación del IMC es la siguiente:
+    • IMC <= 18,4 (Insuficiencia de peso)
+    • 18,5<=IMC<=24,9 (Peso normal)
+    • 25<=IMC<=29,9 (Sobrepeso)
+    • 30<=IMC<=34,9 (Obesidad 1)
+    • 35<=IMC<=39,9 (Obesidad 2)
+    • IMC>=40 (Obesidad 3)
+*/
 echo("Ejercicio 2 <br>");
 echo("calcular el índice de masa corporal <br>");
 
@@ -45,13 +52,14 @@ if($imc<= 18.4){
     echo("(Insuficiencia de peso)");
 }else if($imc>=18.5 && $imc<=24.9){
     echo("Peso normal");
+}else if($imc>=25 && $imc<=29.9){
+    echo("sobrepeso");
+}else if($imc>=30 && $imc<=34.9){
+    echo("Obesidad 1");
+}else if($imc>=35 && $imc<=39.9){
+    echo("Obesidad 2");
+}else{
+    echo("Obesidad 3");
 }
-/*La clasificación del IMC es la siguiente:
-    • IMC <= 18,4 (Insuficiencia de peso)
-    • 18,5<=IMC<=24,9 (Peso normal)
-    • 25<=IMC<=29,9 (Sobrepeso)
-    • 30<=IMC<=34,9 (Obesidad 1)
-    • 35<=IMC<=39,9 (Obesidad 2)
-    • IMC>=40 (Obesidad 3)
-*/
+
 ?>
