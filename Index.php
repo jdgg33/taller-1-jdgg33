@@ -49,17 +49,17 @@ $imc=$peso/$altura;
 echo("<br>El Indice de masa corporal del usuario es =".$imc."<br>");
 
 if($imc<= 18.4){
-    echo("(Insuficiencia de peso)");
+    echo("El usuario tiene Insuficiencia de peso");
 }else if($imc>=18.5 && $imc<=24.9){
-    echo("Peso normal");
+    echo("El usuario tiene Peso normal");
 }else if($imc>=25 && $imc<=29.9){
-    echo("sobrepeso");
+    echo("El usuario tiene sobrepeso");
 }else if($imc>=30 && $imc<=34.9){
-    echo("Obesidad 1");
+    echo("El usuario tiene Obesidad 1");
 }else if($imc>=35 && $imc<=39.9){
-    echo("Obesidad 2");
+    echo("El usuario tiene Obesidad 2");
 }else{
-    echo("Obesidad 3");
+    echo("El usuario tiene Obesidad 3");
 }
 
 ?>
